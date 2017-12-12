@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SLMCUE - Projeto Integrado III</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/photon.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <meta charset="utf-8">
+    <!-- Electron Javascript -->
+    <!-- <script src="app.js" charset="utf-8"></script> -->
+</head>
+
+<body>
+<div class="window">
+    <header class="toolbar toolbar-header"> 				<!--Titulo do programa no topo-->
+        <h1 class="title">Loja Casa e Construção</h1>
+        <div class="toolbar-actions">
+            <div class="btn-group">
+                <button class="btn btn-default">
+                    <span class="icon icon-home"></span>
+                </button>
+                <button class="btn btn-default">
+                    <span class="icon icon-folder"></span>
+                </button>
+                <button class="btn btn-default active">
+                    <span class="icon icon-cloud"></span>
+                </button>
+                <button class="btn btn-default">
+                    <span class="icon icon-popup"></span>
+                </button>
+                <button class="btn btn-default">
+                    <span class="icon icon-shuffle"></span>
+                </button>
+            </div>
+
+            <button class="btn btn-default">
+                <span class="icon icon-home icon-text"></span>
+                Filters
+            </button>
+
+            <button class="btn btn-default btn-dropdown pull-right">
+                <span class="icon icon-megaphone"></span>
+            </button>
+        </div>
+    </header>
+    <div class="window-content">
+        <div class="pane-group">
+            <div class="pane-mini sidebar"> <!-- aparecera um texto ao lado -->
+                <p>
+                    Teste teste 1, 2...
+                </p>
+            </div>
+            <div class="pane">
+                <form id="cadastro-cliente" action="" class="pane-body">
+                    <h3 class="nivel-um">Cadastro de Clientes</h3>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="nome" placeholder="Nome">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="cpf" placeholder="CPF">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="tel" placeholder="Telefone">
+                    </div>
+                    <button type="button" id="salvar" class="btn btn-positve">Salvar
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="toolbar toolbar-footer">			<!--Subtitulo  do programa em baixo-->
+        <h1 class="title">Developer by Antony de Lara</h1>
+    </footer>
+</div>
+</body>
+<script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+</script>
+</html>

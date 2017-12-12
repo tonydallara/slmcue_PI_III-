@@ -2,8 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Electron &amp; Vue.js</title>
+        <title>SLMCUE - Projeto Integrado III</title>
         <link rel="stylesheet" href="assets/css/photon.css">
+		<link rel="stylesheet" href="assets/css/style.css">
         <style type="text/css">
             a {
                 text-decoration: none;
@@ -30,14 +31,18 @@
     <body>
         <div id="app">
             <div class="window">
+				<header class="toolbar toolbar-header"> 				<!--Titulo do programa no topo-->
+					<h1 class="title">Loja Casa e Construção</h1>
+					<div class="toolbar-actions"></div>
+				</header>				
                 <div class="window-content">
                     <div class="pane-group">
                         <div class="pane-sm sidebar">
                             <nav class="nav-group">
-                                <h5 class="nav-group-title">Favorites</h5>
-                                <router-link class="nav-group-item" to="/"><span class="icon icon-home"></span> Home</router-link>
-                                <router-link class="nav-group-item" to="/contacts"><span class="icon icon-users"></span> Contacts</router-link>
-                                <router-link class="nav-group-item" to="/music"><span class="icon icon-note-beamed"></span> Play</router-link>
+                                <h5 class="nav-group-title"><big><b>Menu Principal</b></big></h5>
+								<a href="vendas.html" class="nav-group-item"><span class="icon icon-basket"></span> Vendas</a>
+                                <a href="produtos.html" class="nav-group-item"><span class="icon icon-tools"></span> Produtos</a>
+                                <a href="clientes.html" class="nav-group-item"><span class="icon icon-user-add"></span> Clientes</a>
                             </nav>
                         </div>
                         <div class="pane container" style="padding: 10px;">
@@ -46,10 +51,9 @@
                     </div>
                 </div>
                 <footer class="toolbar toolbar-footer">
-                    <h1 class="title">Made by <a href="http://www.sohelamin.com" target="_blank">Sohel Amin</a></h1>
+                    <h1 class="title">Developer by Antony de Lara</a></h1>
                 </footer>
             </div>
         </div>
-        <script src="dist/build.js"></script>
     </body>
 </html>
